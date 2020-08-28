@@ -26,11 +26,40 @@ Created action on every push to run [pigar](https://github.com/damnever/pigar) t
 - name: Generate requirements with pigar
   run: |
     pigar
-   
+
 - uses: stefanzweifel/git-auto-commit-action@v4
   with:
     commit_message: 🤖 Generate requirements for python 3.7
     commit_user_name: Requirements Bot
 ```
+
+### [`f1f3aa0`] Import legacy code. Minor changes
+
+- Moved paths to constants. Moved absolute paths to relatives paths
+
+  Assuming the `data` directory is placed in the same directory with the `notebooks`, considered changing to relative paths for the JSON files.
+
+  ```python
+  ECHR_DATA_FILE = '../data/ECHR_metadata_0till600.json'
+  NETWORK_FILE = '../data/network.json'
+  ```
+
+- List comprehension for columns filed
+
+  Squashed
+
+  ```python
+  for k in data:
+    v = k.get('columns')
+    list_of_dicts.append(v)
+  ```
+
+  into the following one-liner
+
+  ```python
+  list_of_dicts = [k.get('columns') for k in data]
+  ```
+
+  Read more about [Python List Comprehension](https://www.programiz.com/python-programming/list-comprehension).
 
 [`f1f3aa0`]: https://github.com/maastrichtlawtech/citation-enhance-merger/commit/f1f3aa0e386ccd9cec1d30f9976b6f04cc85eeb1
