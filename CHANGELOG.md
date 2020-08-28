@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## 20-08-2020
+## 29-08-2020
 
 ### [`f1f3aa0`] Add workflow to update the requirements for python 3.7
 
@@ -33,7 +33,7 @@ Created action on every push to run [pigar](https://github.com/damnever/pigar) t
     commit_user_name: Requirements Bot
 ```
 
-### [`f1f3aa0`] Import legacy code. Minor changes
+### [`e7b5e35`] Import legacy code. Minor changes
 
 - Moved paths to constants. Moved absolute paths to relatives paths
 
@@ -63,3 +63,4 @@ Created action on every push to run [pigar](https://github.com/damnever/pigar) t
   Read more about [Python List Comprehension](https://www.programiz.com/python-programming/list-comprehension).
 
 [`f1f3aa0`]: https://github.com/maastrichtlawtech/citation-enhance-merger/commit/f1f3aa0e386ccd9cec1d30f9976b6f04cc85eeb1
+[`e7b5e35`]: https://github.com/maastrichtlawtech/citation-enhance-merger/commit/e7b5e355d040e00d3be524f903f49c15b376ca43
