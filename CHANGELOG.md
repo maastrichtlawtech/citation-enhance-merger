@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## 20-08-2020
 
-- [`f1f3aa0`] Add workflow to update the requirements for python 3.7
+### [`f1f3aa0`] Add workflow to update the requirements for python 3.7
 
 Created action on every push to run [pigar](https://github.com/damnever/pigar) to generating `requirements.txt` from python files and notebooks.
 
