@@ -31,4 +31,5 @@ jobs:
           
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Generate requirements
+          commit_message: 🤖 Generate requirements for python 3.7
+          commit_user_name: Requirements Bot
